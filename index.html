@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- 
+<!--
 Amount of Google searches: 18
 Amount of watching HTML for caveman: 3
 -->
@@ -15,10 +15,16 @@ Amount of watching HTML for caveman: 3
       /* Change the body color */
       body{
         /* 255,255,255 is the same colour, maybe for purposes i don't know*/
-        background-colour: rgb(255, 255, 255);   
+        background-colour: rgb(255, 255, 255);
+      }
+      /*The horizontal row */
+      .hosrow{
+        /*To make it center (or this case the picture*/
+        display: flex;
+        justify-content: center;
       }
       /* Added retro_text from the import */
-      .retro_text{
+      h1{
         font-family: 'Press Start 2P', monospace;
         font-size: 1.75rem;
         color: #000000;
@@ -32,12 +38,16 @@ Amount of watching HTML for caveman: 3
   </head>
   <body>
     <!-- Added the image (see more outside the code) -->
-    <img src="Ciya-logo.png" alt="Ciya Project Logo">
+
+    <div class="hosrow">
+        <img src="Ciya-logo.png" alt="Ciya Project Logo">
+        <!-- We get the headings -->
+    </div>
     <!-- We get the headings -->
-    <h1 class="retro_text">Ciya is a high-performance code, designed for speed. Development is continuing!</h1>
+    <h1>Ciya is a high-performance programming language, designed for speed. Development is still continuing!</h1>
     <!-- The paragraph for the markup, and the link is
     Ciya-VM-->
-    <p>Now, we're still in the parser stage (aka developing the parser) and maintaining the project foundation (like the lexer, repl, README, etc.). 
+    <p>Now, we're still in the parser stage (aka developing the parser) and maintaining the project foundation (like the lexer, repl, README, etc.).
     And we're avoiding AI in this repo, so please don't use it. And lastly, feel free to commit to any of our repos (Like the web-app or the main code).
     Project link here: <a href="https://github.com/Ciya-VM/Ciya">Source code</a>!
     </p>
