@@ -1,17 +1,29 @@
 <!DOCTYPE html>
 <!-- 
 Amount of Google searches: 12
-Amount of HTML for caveman: 3
+Amount of watching HTML for caveman: 3
 -->
-<html>
+<html lang="en">
   <head>
     <!-- The title of the web-app -->
     <title>Ciya: the programming language you need! </title>
 
     <!-- The CSS part of this markup (it's internal CSS) -->
     <style>
+      /* Importing from the url */
+      @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+      /* Change the body color */
       body{
         background-colour: rgb(255, 255, 255);   
+      }
+      /* Added retro_text from the import */
+      .retro_text{
+        font-family: 'Press Start 2P', monospace;
+        font-size: 2-rem;
+        color: #000000;
+      }
+      /* While the paragraph is just Times New Roman */
+      p{
         font-family: "Times New Roman", Times, serif;
       }
     </style>
@@ -19,8 +31,8 @@ Amount of HTML for caveman: 3
   <body>
     <!-- Added the image (see more outside the code) -->
     <img src="Ciya-logo.png" alt="Ciya Project Logo">
-    <!-- We get the heads -->
-    <h1>Ciya is a high-performance code, designed for speed. Development is continuing!</h1>
+    <!-- We get the headings -->
+    <h1 class="retro_text">Ciya is a high-performance code, designed for speed. Development is continuing!</h1>
     <!-- The paragraph for the markup, and the link is
     Ciya-VM-->
     <p>Now, we're still in the parser stage (aka developing the parser) and maintaining the project foundation (like the lexer, repl, README, etc.). 
