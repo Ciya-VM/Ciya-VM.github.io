@@ -18,15 +18,15 @@ body {
   border-radius: 10px;
 }
 
-ul {
+.menubar ul {
   list-style-type: none;
 }
 
-ul li {
+.menubar ul li {
   float: left;
 }
 
-ul li a {
+.menubar ul li a {
   font-family: Arial;
   font-weight: bold;
   display: block;
@@ -36,7 +36,7 @@ ul li a {
   padding: 14px 16px;
 }
 
-ul li a:hover {
+.menubar ul li a:hover {
   background-color: #1111;
 }
 
@@ -65,6 +65,34 @@ ul li a:hover {
   color: #a5acb1;
 }
 
+.left-navigators {
+  width: 240px;
+  height: 100vh;
+  background-color: gray;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin-top: 60px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+.left-navigators a {
+  padding: 15px 25px;
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  display: block;
+  transition: 0.2s;
+}
+
 footer {
   font-size: 14px;
+}
+
+.main-content {
+  margin-left: 240px;
+  padding: 40px;
+  flex-grow: 1;
 }
